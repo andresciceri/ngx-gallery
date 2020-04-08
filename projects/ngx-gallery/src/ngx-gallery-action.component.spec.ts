@@ -1,6 +1,6 @@
 import { } from 'jasmine';
 import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { NgxGalleryActionComponent } from './';
+import { NgxGalleryActionComponent } from '.';
 
 describe('NgxGalleryActionComponent', () => {
     let fixture: ComponentFixture<NgxGalleryActionComponent>;

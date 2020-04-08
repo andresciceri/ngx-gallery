@@ -1,7 +1,7 @@
 import {} from 'jasmine';
-import { Renderer, SimpleChange } from '@angular/core';
+import { Renderer2, SimpleChange } from '@angular/core';
 import { TestBed, ComponentFixture } from '@angular/core/testing';
-import { NgxGalleryActionComponent, NgxGalleryThumbnailsComponent, NgxGalleryArrowsComponent, NgxGalleryBulletsComponent, NgxGalleryHelperService } from './';
+import { NgxGalleryActionComponent, NgxGalleryThumbnailsComponent, NgxGalleryArrowsComponent, NgxGalleryBulletsComponent, NgxGalleryHelperService } from '.';
 
 describe('NgxGalleryThumbnailsComponent', () => {
     let fixture: ComponentFixture<NgxGalleryThumbnailsComponent>;
@@ -11,7 +11,7 @@ describe('NgxGalleryThumbnailsComponent', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
           declarations: [ NgxGalleryThumbnailsComponent, NgxGalleryArrowsComponent, NgxGalleryActionComponent ],
-          providers: [ NgxGalleryHelperService, Renderer ]
+          providers: [ NgxGalleryHelperService, Renderer2 ]
         })
         .overrideComponent(NgxGalleryThumbnailsComponent, {
             set: {
